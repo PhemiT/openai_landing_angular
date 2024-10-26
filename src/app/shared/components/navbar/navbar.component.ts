@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -8,8 +7,6 @@ import { faChevronDown, faBars, faTimes } from '@fortawesome/free-solid-svg-icon
 })
 export class NavbarComponent {
   toggleMenu: boolean = false;
-  menuIcon = faBars;
-  closeIcon = faTimes;
   
   toggleMenuState(): void {
     this.toggleMenu = !this.toggleMenu;
