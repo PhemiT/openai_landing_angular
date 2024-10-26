@@ -1,0 +1,14 @@
+<div class="gpt3__features section__padding" id="features">
+    <div class="gpt3__features-heading">
+      <h1 class="gradient__text">Built with OpenAI's GPT-3</h1>
+      <p>Our API has been deployed in thousands of applications with tasks ranging from helping people learn new languages to solving complex classification problems.</p>
+    </div>
+    <div class="gpt3__features-container">
+      <app-feature
+        *ngFor="let item of featuresData"
+        [title]="item.title"
+        [text]="item.text"
+      ></app-feature>
+    </div>
+  </div>
+  
